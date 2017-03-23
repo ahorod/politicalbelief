@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Political Meter</title>
+  </head>
+  <body>
+    <div class="container">
+    <h2>Political Meter</h2>
+      <form id="form">
+        <div class="form-group must-be-number">
+          <label for="rating">On a scale of 1 to 10, how would you rate Donald Trump</label>
+          <input id="rating" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="animal">Which animal do you like better?</label>
+          <select class="form-control" id="animal">
+            <option>Donkey</option>
+            <option>Elephant</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="rating">What region do you live in?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="region" value="coast" checked>
+              On the Coast
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="region" value="eastcoast">
+              Anywhere else
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <div class = "panel">
+        <h2 id="result"></h2>
+      </div>
+    </div>
+  </body>
+</head>
