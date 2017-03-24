@@ -1,4 +1,12 @@
 $(document).ready(function() {
+  $("#animal").change (function(event) {
+  if ($("#animal").val() === "Elephant"){
+    $("#icecream").show();
+  }
+  else {
+    $("#icecream").hide();
+  }
+});
   $("#form").submit(function(event) {
     var ratingInput = parseInt($("#rating").val());
     var animalInput = $("#animal").val();
